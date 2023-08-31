@@ -2,44 +2,43 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Dancing Script', cursive;
+}
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--font1);
 }
 
 header {
     background-color: black;
     color: white;
-    font-weight: bold;
-    display: inline-flexbox;
     text-align: center;
-    padding: 70px;
-    
 }
 
 header > h1 {
     padding: 50px;
     font-variant: small-caps ;
-    /*
-    font-family: 'Passion One', cursive;
-    font-size: 153px;
-    line-height: 128px;
-    */
-    
+    font-family: var(--font2);
+    font-size: 10vw;
+   
 }
 
 header > p {
     padding: 50px;
-    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-
 }
 
 a {
@@ -57,30 +56,23 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-
-
-    /* font-family: 'Sriracha', cursive;
-    font-size: 30px;
-    padding-top: 80px; */
-
+    font-family: var(--font3);
+    font-size: 3.5vw;
 }
 
 section.normal {
     background-color: white;
-    color: black;
-        
+    color: black;       
 }
 
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
-
-  
-    
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
